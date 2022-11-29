@@ -1,0 +1,146 @@
+/* importing the font */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* variables */
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very--dark--blue--1: hsl(217, 54%, 11%);
+    --ver--dark--blue--2: hsl(216, 50%, 16%);
+    --ver--dark--blue--3: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* resting everything */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* typography */
+
+h1,p{
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 1em;
+}
+
+h1{
+    color: var(--white);
+    font-size: 1rem;
+}
+
+p{
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.p{
+    font-size: .8rem;
+}
+
+.small{
+    font-size: .5rem;
+    font-weight: 400;
+}
+
+.price{
+    color: var(--cyan);
+}
+
+.creator p{
+    font-size: .7rem;
+    position: relative;
+    top: .4em
+}
+
+.creatorName{
+    color: var(--white);
+}
+
+h1:hover,.creatorName:hover{
+    color: var(--cyan);
+}
+/* layout */
+
+body{
+    background-color: var(--very--dark--blue--1);
+    text-align: left !important;
+}
+
+#previewCard{
+    background-color: var(--ver--dark--blue--2);
+    margin: 5em auto;
+    border-radius: 1em;
+    max-width: 14.75em;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.productImgSection{
+    order: -1;
+    display: flex;
+    flex-direction: column;
+}
+
+.productImg{
+    width: 100%;
+    border-radius: .5em;
+    margin-bottom: 1em;
+}
+
+.productImgHover{
+    position: absolute;
+    width: 204px;
+    height: 204px;
+}
+
+.productImgHover:hover{
+    background-color: hsla(178, 100%, 50%, 0.515);
+    background-image: url('../images/icon-view.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon{
+    float: left;
+    margin-right: .5em;
+    position: relative;
+    top: -.15em;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column{
+    min-width: 5em;
+}
+
+.creator{
+    border-top: .2em solid var(--ver--dark--blue--3);
+    margin-top: .5em;
+    padding: 1em;
+}
+
+.creatorAvatar{
+    width: 15%;
+    border: 1px solid white;
+    border-radius: 50%;
+    float: left;
+    margin-right: .5em;
+}
