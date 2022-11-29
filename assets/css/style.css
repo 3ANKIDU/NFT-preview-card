@@ -63,6 +63,7 @@ p{
 
 h1:hover,.creatorName:hover{
     color: var(--cyan);
+    cursor: pointer;
 }
 /* layout */
 
