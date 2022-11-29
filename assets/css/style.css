@@ -70,11 +70,14 @@ h1:hover,.creatorName:hover{
 body{
     background-color: var(--very--dark--blue--1);
     text-align: left !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 #previewCard{
     background-color: var(--ver--dark--blue--2);
-    margin: 5em auto;
     border-radius: 1em;
     max-width: 14.75em;
 }
